@@ -1,0 +1,32 @@
+What is Selection Sort?
+
+Selection Sort works like this:
+
+👉 Find the smallest number
+👉 Put it in the correct position
+
+Then repeat for the rest of the array.
+
+Think like this:
+
+You select the smallest number every time.
+
+That’s why it is called Selection Sort.
+
+
+arr = [7,2,5,3]
+
+n = len(arr)
+
+for i in range(n):
+
+    min_index = i
+
+    for j in range(i+1, n):
+
+        if arr[j] < arr[min_index]:
+            min_index = j
+
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+
+print(arr)
